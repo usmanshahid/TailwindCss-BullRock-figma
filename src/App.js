@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Airdrop from "./Components/AirDop/airdrop";
+import ClaimairDrop from "./Components/ClaimAirdrop/claim";
+import Cross from "./Components/CrossChain/cross";
+import Header from "./Components/Header&NavBar/header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Airdrop />
+      <ClaimairDrop />
+      <Cross />
+    </>
+  )
+
 }
 
 export default App;
